@@ -1,0 +1,12 @@
+services:
+  blockchain:
+    build: .
+    container_name: blockchain_container
+    ports:
+      - "3000:3000"
+    networks:
+      - network
+
+networks:
+    network:
+        driver: bridge
